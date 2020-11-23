@@ -1,0 +1,22 @@
+#title{
+    text-align: center;
+    color: #E8F1F2;
+    font-weight: bold;
+    font-size: 75px;
+    /* margin-bottom: 30px; */
+    line-height: 60px;
+    width: auto;
+}
+
+1080 x 2062
+
+360 x 687.33
+
+
+270 x 515
+
+
+
+https://cssgradient.io
+
+https://origamid.com/projetos/flexbox-guia-completo/

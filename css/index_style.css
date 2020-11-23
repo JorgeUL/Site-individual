@@ -1,0 +1,334 @@
+/* cores do site:
+laranja - #B76E00
+black - #191923
+white - #E8F1F2
+*/
+
+html{
+    scroll-behavior: smooth;
+  }
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background: rgb(25,25,35);
+    color: #E8F1F2;
+    background: linear-gradient(180deg, rgba(25,25,35,1) 0%, rgba(47,47,57,1) 85%, rgba(255,255,255,1) 100%);
+}
+
+span {
+   color:#B76E00;
+}
+
+/* SCROLL BAR */
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #191923; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #B76E00; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #E8F1F2; 
+  }
+
+
+/* HEADER */
+
+.header {
+    width: 100%;
+    height: 100px;
+    border-bottom: #B76E00 solid 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #191923;
+
+}
+.content {
+    padding: 0;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+  
+  .sticky + .content {
+    padding-top: 102px;
+  }
+
+.icone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.icone img{
+    height: 70px;
+    width: 70px;
+}
+
+.titulo {
+
+    font-size: 45px;
+    line-height: 40px;
+    text-align: center;
+    width: 100%;
+    
+}
+
+.acoes {
+    font-size: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+
+.suporte  a{
+    color: #E8F1F2;
+    text-decoration: unset;
+}
+
+.suporte :hover {
+  transition: 0.5s;
+  color: #B76E00;
+
+}
+
+.cadastrar  a{
+    color: #E8F1F2;
+    text-decoration: unset;
+}
+
+.cadastrar  :hover {
+  transition: 0.5s;
+  color: #B76E00;
+
+}
+
+.login  a{
+    color: #E8F1F2;
+    text-decoration: unset;
+}
+
+.login :hover {
+  transition: 0.5s;
+  color: #B76E00;
+
+}
+ 
+/* FIM HEADER */
+
+/* VIDEO */
+
+.subtitulo {
+    margin-top: 150px;
+ 
+    font-size: 60px;
+    line-height: 40px;
+    text-align: center;
+    width: 100%;
+}
+
+.video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.conheca {
+    margin-top: 50px;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 100%;
+}
+
+.seta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+}
+.seta img{
+    height: 100px;
+    width: 100px;
+}
+
+/* SOBRE  */
+
+.sobre_projeto {
+    
+    margin-left: 20%;
+    margin-top: 50px;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    width: 60%;
+}
+
+.sobre_jorge {
+
+    width: 90%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.img_jorge {
+    display: flex;
+    width: 30%;
+    justify-content: flex-end;
+}
+
+.img_jorge img {
+    width: 135px;
+    height: 257.75px;
+    border-radius: 20px;
+}
+
+.txt_jorge {
+    width: 50%;
+    justify-content: center;
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: normal;
+
+
+}
+
+.botao_jorge {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.botao_jorge button {
+    background-color: #B76E00;
+    color: black;
+    border: none;
+    width: 220px;
+    height: 60px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.botao_jorge :hover {
+    transition: 0.5s;
+    background-color: black ;
+    color: #B76E00;
+}
+
+.txt_proposta {
+
+    margin-top: 50px;
+    font-size: 25px;
+    line-height: 40px;
+    text-align: center;
+    width: 80%;
+    margin-left: 10% ;
+    
+}
+
+/* SERVIÇOS */
+
+.pacotes {
+    width: 90%;
+    margin-top: 5%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pacote_basic {
+    width: 30%;
+}
+
+.pacote_amador {
+    width: 30%;
+}
+
+.pacote_pro {
+    width: 30%;
+}
+
+.titulo_pacote {
+    font-size: 25px;
+    text-align: center;
+}
+
+.img_hs {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.img_hs img {
+    width: 50px;
+    height: 50px;
+}
+
+.descricao_pacote{
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.botao_quero{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.botao_quero :hover {
+    transition: 0.5s;
+    background-color: black ;
+    color: #B76E00;
+}
+
+.botao_quero button {
+    background-color: #B76E00;
+    color: black;
+    border: none;
+    width: 130px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+.footer {
+    color: black;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
