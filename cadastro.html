@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <link href="css/cadastro_style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="meio">
+            <div class="cadastro">
+                <div class="titulo_cadastro">Cadastro</div>
+                <div class="titulo_credenciais">Nome</div>
+                <div class="inputs"><input type="text" id="nome"></div>
+                <div class="titulo_credenciais">Sobrenome</div>
+                <div class="inputs"><input type="text" id="sobrenome"></div>
+                <div class="titulo_credenciais">E-mail</div>
+                <div class="inputs"><input type="text" id="email"></div>
+                <div class="titulo_credenciais">Senha</div>
+                <div class="inputs"> <input type="password" id="senha"></div>
+                <div class="titulo_credenciais">Escolha o pacote</div>
+                <div class="pacote">
+                    <select name="pacotes" id="packages" class="combo_pacotes">
+                        <option value="selecionar">--Selecionar--</option>
+                        <option value="basic">Basic</option>
+                        <option value="amador">Amador</option>
+                        <option value="pro">Pro</option>
+                    </select>
+                </div>
+                <div class="botao_cadastrar"> <button onclick="cadastrar()">Cadastrar</button></div>
+            </div>
+        </div>
+
+        <div class="header">
+            <div class="icone"> <a href="index.html"><img src="./img/icone.jpg" alt=""></a></div>
+            <div class="titulo">Be <br> Bett<span>3</span>r</div>
+            <div class="suporte"> <a href="suporte.html"> Suporte </a>
+        </div>
+
+    </div>
+</body>
+
+</html>
