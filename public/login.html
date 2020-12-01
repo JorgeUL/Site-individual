@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="css/login_style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/hs.png">
+
+    <title>Login</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <div class="icone"> <a href="index.html"><img src="./img/icone.jpg" alt=""></a></div>
+            <div class="titulo">Be <br> Bett<span>3</span>r</div>
+            <div class="suporte"> <a href="suporte.html"> Suporte </a></div>
+        </div>
+        <div class="meio">
+            <div class="login">
+                <div class="titulo_login">Login</div>
+                <form id="form_login" method="post" onsubmit="return entrar()">
+                    <div class="titulo_credenciais">Usuário:</div>
+                    <input type="text" class="input-padrao" name="login">
+                    <br>
+                    <div class="titulo_credenciais">Senha:</div>
+                    <input type="password" class="input-padrao" name="senha">
+                    <br>
+                    <div class="botao">
+                        <button id="btn_entrar" class="btn">Entrar</button>
+                    </div>
+                </form>
+                <div class="extra">
+                    <div id="div_erro" class="msg_erro">
+                    </div>
+                    <img src="img/carregando.gif" id="img_aguarde" width="100px" class="img_carregando">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    function entrar() {
+        aguardar();
+        var formulario = new URLSearchParams(new FormData(form_login));
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            body: formulario
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    sessionStorage.login_usuario_meuapp = json.login;
+                    sessionStorage.nome_usuario_meuapp = json.nome;
+
+                    window.location.href = 'dashboard.html';
+                });
+
+            } else {
+
+                console.log('Erro de login!');
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                    finalizar_aguardar(texto);
+                });
+            }
+        });
+
+        return false;
+    }
+
+    function aguardar() {
+        btn_entrar.disabled = true;
+        img_aguarde.style.visibility = 'visible';
+        div_erro.style.visibility = 'hidden';
+    }
+
+    function finalizar_aguardar(resposta) {
+        btn_entrar.disabled = false;
+        img_aguarde.style.visibility = 'hidden';
+        div_erro.style.visibility = 'visible';
+        div_erro.innerHTML = resposta;
+    }
+
+</script>

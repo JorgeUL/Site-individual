@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel</title>
+
+    <link href="css/dashboard_style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/hs.png">
+</head>
+
+<body onload="verificar_autenticacao()">
+    <div class="header">
+        <div class="esquerda">
+            <div class="icone"> <img src="./img/icone.jpg" alt=""></div>
+            <div class="titulo">Be <br> Bett<span>3</span>r </div>
+        </div>
+        <div class="acoes">
+            <div class="suporte"> <a href="suporte.html" target="_blank"> Suporte </a></div>
+            <div class="como_funciona"> <a href="#cadastro_pacotes"> Como funciona </a> </div>
+            <div class="sair"> <a href="index.html"> Sair </a> </div>
+
+        </div>
+    </div>
+
+    <div class="lado_esquerdo">
+        <div class="boas_vindas"> <b class="ola">Olá</b>  <b id="b_usuario"></b>!</div>
+        <div class="titulo_aulas"><span>Video Aulas</span></div>
+        <div class="videos">
+            <div class="video"><iframe width="373.33" height="210" src="https://www.youtube.com/embed/1BT_G3-ssEY"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
+            <div class="video"><iframe width="373.33" height="210" src="https://www.youtube.com/embed/ox-v-2veuJg"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
+
+            <div class="video"><iframe width="373.33" height="210" src="https://www.youtube.com/embed/d9dd6ZauLsk"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
+        </div>
+    </div>
+    <div class="lado_direito"></div>
+</body>
+
+</html>
+<script src="js/funcoes.js">
+let usuario;
+
+verificar_autenticacao();
+
+</script>

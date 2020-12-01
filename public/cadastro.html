@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <link href="css/cadastro_style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/hs.png">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="meio">
+            <div class="cadastro">
+                <div class="titulo_cadastro">Cadastro</div>
+                <form id="form_cadastro" class="formulario" onsubmit="cadastrar()">
+                    <label for="nome">Nome e sobrenome</label>
+                    <input type="text" name="nome" class="input-padrao" autofocus="autofocus"
+                        placeholder="Nome completo" required minlength="4">
+                    <label for="login">Login</label>
+                    <input type="text" name="login" class="input-padrao" placeholder="Usuário para login" required
+                        minlength="4">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" class="input-padrao" placeholder="**********" required
+                        minlength="4">
+                    <label for="pacote">Pacote</label>
+                    <div class="pacote">
+                        <select name="pacotes" class="combo_pacotes">
+                            <option value="selecionar">--Selecionar--</option>
+                            <option value="basic">Basic</option>
+                            <option value="amador">Amador</option>
+                            <option value="pro">Pro</option>
+                        </select>
+                    </div>
+                    <div class="botao">
+                        <input type="submit" id="btn_entrar" value="Cadastrar" class="btn">
+                    </div>
+                </form>
+
+                <img src="img/carregando.gif" id="img_aguarde" style="display: none;" width="100px">
+            </div>
+        </div>
+
+        <div class="header">
+            <div class="icone"> <a href="index.html"><img src="./img/icone.jpg" alt=""></a></div>
+            <div class="titulo">Be <br> Bett<span>3</span>r</div>
+            <div class="suporte"> <a href="suporte.html"> Suporte </a>
+            </div>
+
+        </div>
+</body>
+
+</html>
+<script>
+    function cadastrar() {
+        aguardar();
+        var formulario = new URLSearchParams(new FormData(form_cadastro));
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            body: formulario
+        }).then(function (response) {
+            console.log('teste')
+
+            if (response.ok) {
+
+                window.location.href = 'login.html';
+
+            } else {
+
+                console.log('Erro de cadastro!');
+                response.text().then(function (resposta) {
+                    alert = resposta;
+                });
+                finalizar_aguardar();
+            }
+        });
+
+        return false;
+    }
+
+    function aguardar() {
+        btn_entrar.disabled = true;
+        img_aguarde.style.display = 'block';
+    }
+
+    function finalizar_aguardar() {
+        btn_entrar.disabled = false;
+        img_aguarde.style.display = 'none';
+    }
+</script>
