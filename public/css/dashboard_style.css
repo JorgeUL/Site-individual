@@ -10,7 +10,7 @@ body {
   font-weight: bold;
   background: #191923;
   color: #E8F1F2;
-  /* background: linear-gradient(180deg, rgb(25, 25, 35) 0%, rgba(47,47,57,1) 85%, rgba(255,255,255,1) 100%); */
+  background: linear-gradient(180deg, rgb(25, 25, 35) 0%, rgba(47,47,57,1) 85%, rgba(255,255,255,1) 100%);
 }
 
 span {
@@ -103,13 +103,22 @@ span {
 
 }
 
-.como_funciona  a{
+.works{
     color: #E8F1F2;
     text-decoration: unset;
     margin-right: 40px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.como_funciona  :hover {
+.como_funciona :hover {
   transition: 0.5s;
   color: #B76E00;
 
@@ -133,6 +142,7 @@ span {
 
 .lado_esquerdo {
   width: 50%;
+  float: left;
 }
 .boas_vindas {
   font-size: 40px;
@@ -151,10 +161,31 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
-  margin-left: 100px;
+  margin-left: 150px;
   margin-bottom: 10px;
 }
+
+.title_video {
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+  font-weight: bold;
+  color: #B76E00;
+  margin-top: 44px;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo_aulas :hover {
+  transition: 0.5s;
+  color: #E8F1F2;
+}
+
 
 .videos {
   width: 60%;
@@ -165,6 +196,8 @@ span {
   align-items: center;
   justify-content: center;
   background-color: #14141c;
+  border-radius: 10px;
+  padding: 30px 30px 30px 30px;
 }
 
 .video {
@@ -172,3 +205,117 @@ span {
 }
 
 /* Lado Direito da pág. */
+.lado_direito {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title_treino {
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+  font-weight: bold;
+  color: #B76E00;
+  margin-top: 143px;
+  margin-bottom: 10px;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo_treino :hover {
+  transition: 0.5s;
+  color: #E8F1F2;
+}
+
+.treino {
+  width: 65%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #14141c;
+  border-radius: 10px;
+  padding: 30px 30px 30px 30px;
+}
+
+.treino_list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+}
+
+.treino_list a {
+  margin-left: 10px;
+  color:#B76E00;
+  
+}
+
+.treino img {
+  width: 30px;
+}
+
+.signs {
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+  font-weight: bold;
+  color: #B76E00;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo_assinaturas :hover {
+  transition: 0.5s;
+  color: #E8F1F2;
+}
+
+.assinaturas {
+  width: 65%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #14141c;
+  border-radius: 10px;
+  padding: 30px 30px 30px 30px;
+}
+
+.assinaturas_list { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+}
+
+.assinaturas_list a {
+  margin-left: 10px;
+  color:#E8F1F2;
+
+}
+
+/* FOOTER */
+
+.footer {
+  color: black;
+  margin-top: 300px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}

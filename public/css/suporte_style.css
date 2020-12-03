@@ -217,3 +217,11 @@ span {
     background-color: #191923 ;
     color: #B76E00;
 }
+
+.footer {
+    color:#E8F1F2;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}

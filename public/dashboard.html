@@ -19,15 +19,15 @@
         </div>
         <div class="acoes">
             <div class="suporte"> <a href="suporte.html" target="_blank"> Suporte </a></div>
-            <div class="como_funciona"> <a href="#cadastro_pacotes"> Como funciona </a> </div>
+            <div class="como_funciona"> <button onclick="funciona()" class="works"> Como funciona </button> </a> </div>
             <div class="sair"> <a href="index.html"> Sair </a> </div>
 
         </div>
     </div>
 
     <div class="lado_esquerdo">
-        <div class="boas_vindas"> <b class="ola">Olá</b>  <b id="b_usuario"></b>!</div>
-        <div class="titulo_aulas"><span>Video Aulas</span></div>
+        <div class="boas_vindas"> <b class="ola">Olá</b> <b id="b_usuario"></b>!</div>
+        <div class="titulo_aulas"><button onclick="video()" class="title_video">Video Aulas</button></div>
         <div class="videos">
             <div class="video"><iframe width="373.33" height="210" src="https://www.youtube.com/embed/1BT_G3-ssEY"
                     frameborder="0"
@@ -43,8 +43,36 @@
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe></div>
         </div>
+
     </div>
-    <div class="lado_direito"></div>
+    <div class="lado_direito">
+        <div class="titulo_treino"> <button onclick="treino()" class="title_treino">Treino</button></div>
+        <div class="treino">
+            <div class="treino_list">Treinar mira (mapa de Mata-Mata ou <a
+                    href="https://www.youtube.com/watch?v=2mUGzszkZgk" target="_blank">Aimbotz</a>)
+            </div><br>
+            <div class="treino_list">Treinar granadas em mapas: Dust2, Mirage e Inferno</div><br>
+            <div class="treino_list">Analisar jogadores que fazem a sua função no jogo</div><br>
+            <div class="treino_list">Ver as video aulas</div><br>
+            <div class="treino_list">Jogar 2 partidas na GamersClub</div>
+        </div>
+        <div class="titulo_assinaturas"> <button onclick="assinaturas()" class="signs">Assinaturas</button></div>
+        <div class="assinaturas">
+            <div class="assinaturas_list"> <a href="https://gamersclub.com.br/shop " target="_blank">GamersClub</a>
+            </div> <br>
+            <div class="assinaturas_list"> <a
+                    href="https://www.youtube.com/channel/UCak-kz4Wyua11vA7IIT8jkQ/channels?view_as=subscriber"
+                    target="_blank">Canais do Youtube</a></div> <br>
+            <div class="assinaturas_list"> <span> Canais da Twitch (Transmissão ao vivo):</span></a></div>
+            <div class="assinaturas_list"><a href="https://www.twitch.tv/gaules" target="_blank">Gaules(Campeonatos)</a>
+            </div>
+            <div class="assinaturas_list"><a href="https://www.twitch.tv/zorlakoka">Zorlak(Analista)</a></div>
+            <div class="assinaturas_list"><a href="https://www.twitch.tv/boltz">Boltz(Pro-player)</a></div>
+            <div class="assinaturas_list"><a href="https://www.twitch.tv/gafallen">Fallen(Pro-player)</a></div>
+        </div>
+    </div>
+    <div class="footer">Copyright © Todos os direitos reservados.
+        Feito por um amante de cs ♥</div>
 </body>
 
 </html>

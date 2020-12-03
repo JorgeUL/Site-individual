@@ -1,0 +1,184 @@
+/* cores do site:
+laranja - #B76E00
+black - #191923
+white - #E8F1F2
+*/
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-color: black;
+    color: #E8F1F2;
+}
+
+span {
+    color:#B76E00;
+}
+
+/* SCROLL BAR */
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: black; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #E8F1F2; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #B76E00; 
+  }
+
+
+
+.header {
+    width: 100%;
+    height: 100px;
+    /* border-bottom: #B76E00 solid 5px; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+
+}
+
+.icone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.icone img{
+    height: 70px;
+    width: 70px;
+}
+
+.titulo {
+
+    font-size: 45px;
+    line-height: 40px;
+    text-align: center;
+    width: 100%;
+    color:#E8F1F2;
+    
+}
+
+.acoes {
+    font-size: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+
+.suporte  a{
+    color: #E8F1F2;
+    text-decoration: unset;
+}
+
+.suporte :hover {
+  transition: 0.5s;
+  color: #B76E00;
+
+}
+
+.cadastrar  a{
+    color: #E8F1F2;
+    text-decoration: unset;
+}
+
+.cadastrar  :hover {
+  transition: 0.5s;
+  color: #B76E00;
+
+}
+
+.login  a{
+    color: #E8F1F2;
+    text-decoration: unset;
+}
+
+.login :hover {
+  transition: 0.5s;
+  color: #B76E00;
+
+}
+
+.inicio {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+
+.titulo_texto {
+    margin-top: 150px;
+    font-size: 35px;
+}
+
+.texto {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+    font-style: italic;
+    width: 60%;
+}
+
+.imagens_texto {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.imagens_texto img {
+    margin-left: 40px;
+    
+    
+}
+
+.img_titulo {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+
+.descricao_img {
+    margin-top: 20px;
+    width: 45%;
+}
+
+#computador {
+    margin-left: 260px;
+}
+
+.olof_frase {
+    margin-top: 30px
+}
+.traducao {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.footer {
+    color:#E8F1F2;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
