@@ -17,7 +17,7 @@
         <div class="meio">
             <div class="cadastro">
                 <div class="titulo_cadastro">Cadastro</div>
-                <form id="form_cadastro" class="formulario" onsubmit="cadastrar()">
+                <form id="form_cadastro" class="formulario" method="post" onsubmit="return cadastrar()">
                     <label for="nome">Nome e sobrenome</label>
                     <input type="text" name="nome" class="input-padrao" autofocus="autofocus"
                         placeholder="Nome completo" required minlength="4">
@@ -63,7 +63,6 @@
             method: "POST",
             body: formulario
         }).then(function (response) {
-            console.log('teste')
 
             if (response.ok) {
 
